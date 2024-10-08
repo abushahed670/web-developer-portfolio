@@ -28,7 +28,11 @@
     font-weight: bold;
     border: none;
 }
-
+.header{
+   background-image: url(../images/developer.png), url(../images/header_bg.png);
+   background-repeat: no-repeat;
+   background-position: top left, bottom right;
+}
 /* nav style */
 nav {
     display: flex;
@@ -58,4 +62,43 @@ nav ul li {
 nav li a {
     text-decoration: none;
     font-size: 20px;
+}
+
+/* banner styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+
+}
+.banner-content{
+    max-width: 580px;
+}
+.banner-greetings {
+    color: rgb(71, 71, 71);
+    font-size: 45px;
+    font-weight: 600;
+
+}
+
+.banner-title {
+    color: rgb(24, 24, 24);
+    font-size: 85px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.banner-profile-pic {
+    /* position: absolute; */
+    width: 584px;
+    /* height: 676px;
+    left: 978px;
+    right: 38px;
+    top: 161px;
+    bottom: 3419px; */
 }
