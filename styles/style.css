@@ -7,7 +7,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
+        "width" 100;
 }
 
 /* shared style  */
@@ -238,27 +238,61 @@ footer textarea {
 }
 
 /* responsive media query */
-.hide {
+/* .hide {
     display: none;
-}
+} */
+/* for small device  */
 
 @media screen and (max-width: 576px) {
 
     .skills-container,
     .resume-container,
-    footer, .about-items {
+    footer,
+    .about-items,
+    .banner,
+    nav,
+    nav>ul {
         flex-direction: column;
     }
 
-    footer, .about {
-        padding: 20px;
+    nav>ul {
+        gap: 20px;
     }
-    .footer-column{
+
+    .btn-primary {
+        margin-top: 20px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .banner {
+        margin: 20px;
+    }
+
+    .banner-profile-pic {
         width: 100%;
     }
+
+    footer,
+    .about {
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
     footer input[type="text"],
-footer input[type="email"],
-footer textarea{
-    width: calc(100% - 40px);
+    footer input[type="email"],
+    footer textarea {
+        width: calc(100% - 40px);
+    }
 }
+
+/* for medium devices  */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    
 }
